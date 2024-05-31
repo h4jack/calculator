@@ -16,8 +16,9 @@ http://myloginphp.rf.gd/calculator/
 - Click on previous calculations in the history to load them into the input field.
 
 ## Code Functionality
-To View and Understand the Code: [Click Here](https://github.com/h4jack/calculator/blob/main/LICENSE/)
+To View and Understand the Code: [Click Here](https://github.com/h4jack/calculator/blob/main/CODE.md/)
 
+## Download/Installation
 #### Clone the repo and use and analyze the code.
 and open the index.html file in your web browser.
 ```bash
