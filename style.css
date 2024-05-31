@@ -1,0 +1,191 @@
+body{
+    background-color: #333333;
+    color: #dddddd;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.heading{
+    color: rgba(222, 238, 221, 0.842);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+input{
+    background-color: transparent;
+}
+
+.expin,
+.result {
+    float: right;
+    width: 320px;
+    height: 60px;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+
+.body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+
+button:hover {
+    background-color: #a0808091;
+}
+
+button:active {
+    background-color: #352c2c;
+    color: rgb(255, 255, 255);
+}
+
+.error {
+    visibility: hidden;
+}
+
+.cli-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    height: 540px;
+    width: 340px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px;
+    margin-top: 60px;
+}
+
+.history {
+    color: #dddddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#last-command {
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font-family: monospace;
+    font-size: 16px;
+    color: #dddddd;
+    visibility: hidden;
+}
+
+
+#submit-button:hover {
+    background-color: #55dd55;
+}
+
+.cli-output {
+    height: 440px;
+    width: 100%;
+    position: absolute;
+    flex: 1;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    bottom: 100px;
+    border-radius: 10px;
+}
+
+.cli-output::-webkit-scrollbar {
+    display: none;
+    /* div.scroll-view {
+        direction: rtl;
+        overflow-x: scroll;
+        height: 100px;
+        width: 300px;
+      } */
+}
+
+
+#last-command-output {
+    margin: 0;
+}
+
+.cli-input {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#user-input {
+    float: left;
+    background-color: #333333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: #dddddd;
+    text-align: left;
+}
+
+#submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+    width: 20%;
+    height: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .body {
+        flex-direction: column;
+    }
+    .calculator{
+        width: auto;
+    }
+    .cli-container {
+        width: 340px;
+        margin: 10px 0;
+    }
+}
